@@ -1,4 +1,10 @@
 module.exports = {
+  env: {
+    browser: true,
+    node: true,
+    jest: true,
+    es6: true,
+  },
   root: true,
   extends: [
     'eslint:recommended',
@@ -22,6 +28,8 @@ module.exports = {
     //   },
     // ],
     'react/react-in-jsx-scope': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+    'import/no-unresolved': 0,
   },
   ignorePatterns: ['src/**/*.test.ts', 'src/frontend/generated/*'],
 }
