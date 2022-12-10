@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom'
 
 export default function Root() {
   return (
-    <div className=''>
+    <div className='flex align-center container mx-auto'>
       <Outlet />
     </div>
   )
